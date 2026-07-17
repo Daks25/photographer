@@ -1,0 +1,508 @@
+/* ============================================
+   ANIMATIONS - AOS (ANIMATE ON SCROLL)
+   ============================================ */
+
+/* Intersection Observer animations */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+[data-aos="fade-down"] {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+[data-aos="zoom"] {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+/* Animation state */
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: none;
+    transition: opacity 600ms cubic-bezier(0.23, 1, 0.32, 1) 0ms,
+                transform 600ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+/* Delayed animations */
+[data-aos][data-aos-delay="100"].aos-animate {
+    transition-delay: 100ms;
+}
+
+[data-aos][data-aos-delay="200"].aos-animate {
+    transition-delay: 200ms;
+}
+
+[data-aos][data-aos-delay="300"].aos-animate {
+    transition-delay: 300ms;
+}
+
+[data-aos][data-aos-delay="400"].aos-animate {
+    transition-delay: 400ms;
+}
+
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade Out Animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Slide Left Animation */
+@keyframes slideLeft {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide Right Animation */
+@keyframes slideRight {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Zoom Out Animation */
+@keyframes zoomOut {
+    from {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(201, 162, 39, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(201, 162, 39, 0.6);
+    }
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Button Ripple Animation */
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ============================================
+   PARALLAX ANIMATION
+   ============================================ */
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ============================================
+   IMAGE REVEAL ANIMATION
+   ============================================ */
+
+.image-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-reveal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    animation: revealImage 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes revealImage {
+    from {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    to {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+
+/* ============================================
+   BUTTON ANIMATIONS
+   ============================================ */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+}
+
+.btn:active::before {
+    animation: buttonRipple 0.6s ease-out;
+}
+
+@keyframes buttonRipple {
+    to {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   TEXT ANIMATIONS
+   ============================================ */
+
+/* Character Animation */
+.text-animate {
+    display: inline-block;
+}
+
+.char {
+    display: inline-block;
+    opacity: 0;
+    animation: charFadeIn 0.6s ease-out forwards;
+}
+
+@keyframes charFadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Word Animation */
+.word {
+    display: inline-block;
+    opacity: 0;
+    animation: wordFadeIn 0.6s ease-out forwards;
+}
+
+@keyframes wordFadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ============================================
+   LOADING ANIMATION
+   ============================================ */
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--color-light-gray);
+    border-top-color: var(--color-accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================
+   SKELETON LOADING
+   ============================================ */
+
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--color-light-gray) 0%,
+        var(--color-medium-gray) 50%,
+        var(--color-light-gray) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* ============================================
+   STAGGERED ANIMATIONS
+   ============================================ */
+
+.stagger-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.stagger-item {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0ms; }
+.stagger-item:nth-child(2) { animation-delay: 100ms; }
+.stagger-item:nth-child(3) { animation-delay: 200ms; }
+.stagger-item:nth-child(4) { animation-delay: 300ms; }
+.stagger-item:nth-child(5) { animation-delay: 400ms; }
+
+/* ============================================
+   HOVER ANIMATIONS
+   ============================================ */
+
+/* Grow on Hover */
+.hover-grow:hover {
+    transform: scale(1.05);
+}
+
+/* Lift on Hover */
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Rotate on Hover */
+.hover-rotate:hover {
+    transform: rotate(2deg);
+}
+
+/* Darken on Hover */
+.hover-darken:hover {
+    filter: brightness(0.9);
+}
+
+/* Color Change on Hover */
+.hover-color:hover {
+    color: var(--color-accent);
+}
+
+/* ============================================
+   TRANSITION CLASSES
+   ============================================ */
+
+.transition-fast {
+    transition: all var(--transition-fast);
+}
+
+.transition-base {
+    transition: all var(--transition-base);
+}
+
+.transition-slow {
+    transition: all var(--transition-slow);
+}
+
+/* ============================================
+   PROGRESS BAR
+   ============================================ */
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-light-gray);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    border-radius: 2px;
+    animation: progressFill 2s ease-out forwards;
+}
+
+@keyframes progressFill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   SCROLL REVEAL
+   ============================================ */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* ============================================
+   ACCORDION ANIMATION
+   ============================================ */
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-content.active {
+    max-height: 1000px;
+}
+
+/* ============================================
+   MODAL ANIMATIONS
+   ============================================ */
+
+.modal {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    animation: modalSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes modalSlideIn {
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* ============================================
+   TOAST NOTIFICATION
+   ============================================ */
+
+.toast {
+    animation: slideUp 0.3s ease-out forwards;
+}
+
+.toast.hide {
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+/* ============================================
+   PREFLIGHT ANIMATIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

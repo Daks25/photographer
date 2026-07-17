@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium photography portfolio. Specializing in wedding, portrait, and commercial photography."
+    />
+    <meta name="theme-color" content="#111111" />
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="Photography Portfolio | Award-Winning Creative Studio"
+    />
+    <meta
+      property="og:description"
+      content="Explore stunning photography across weddings, portraits, fashion, and commercial projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourportfolio.com" />
+    <meta
+      property="og:image"
+      content="https://yourportfolio.com/images/og-image.avif"
+    />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Photography Portfolio | Award-Winning Creative Studio"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore stunning photography across weddings, portraits, fashion, and commercial projects."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourportfolio.com/images/twitter-card.avif"
+    />
+
+    <link rel="canonical" href="https://yourportfolio.com" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" href="images/hero/hero-main.avif" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>Photography Portfolio | Award-Winning Creative Studio</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-container">
+        <a
+          href="index.html"
+          class="navbar-logo"
+          aria-label="Photography portfolio home"
+        >
+          <i class="fas fa-camera"></i>
+          <span>STUDIO</span>
+        </a>
+
+        <div
+          class="navbar-toggle"
+          id="navbar-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="navbar-menu" id="navbar-menu" role="menu">
+          <li class="navbar-item" role="menuitem">
+            <a href="index.html" class="navbar-link active" data-section="home"
+              >Home</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a href="about.html" class="navbar-link" data-section="about"
+              >About</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a
+              href="portfolio.html"
+              class="navbar-link"
+              data-section="portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a href="services.html" class="navbar-link" data-section="services"
+              >Services</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a href="gallery.html" class="navbar-link" data-section="gallery"
+              >Gallery</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a href="contact.html" class="navbar-link" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="contact.html#booking"
+          class="btn-cta"
+          aria-label="Book a session"
+        >
+          Book Session
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" role="banner">
+      <picture class="hero-background">
+        <source
+          srcset="
+            https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80&fm=avif
+          "
+          type="image/avif"
+        />
+        <source
+          srcset="
+            https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80&fm=webp
+          "
+          type="image/webp"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80&fm=jpg"
+          alt="Beautiful photography moment in natural light"
+          class="hero-img"
+        />
+      </picture>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content" data-aos="fade-up">
+        <h1 class="hero-title">Moments That Matter</h1>
+        <p class="hero-subtitle">
+          Timeless photography for your most precious moments
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            href="portfolio.html"
+            class="btn btn-primary"
+            aria-label="View our portfolio"
+          >
+            Explore Portfolio
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a
+            href="contact.html#booking"
+            class="btn btn-secondary"
+            aria-label="Start booking a session"
+          >
+            Book a Session
+            <i class="fas fa-calendar"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-label="Scroll down to continue">
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Featured Portfolio Section -->
+    <section class="featured-portfolio" id="featured">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Featured Work</h2>
+          <p>A selection of our most recent projects</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-image-wrapper">
+              <picture>
+                <source
+                  srcset="
+                    https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80&fm=avif
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80&fm=webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80&fm=jpg"
+                  alt="Wedding photography - romantic ceremony"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Wedding</span>
+                <a
+                  href="portfolio.html"
+                  class="btn-overlay"
+                  aria-label="View wedding portfolio"
+                  >View</a
+                >
+              </div>
+            </div>
+            <h3>The Chen Wedding</h3>
+            <p>Elegant celebration in autumn gardens</p>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-image-wrapper">
+              <picture>
+                <source
+                  srcset="
+                    https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80&fm=avif
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80&fm=webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80&fm=jpg"
+                  alt="Professional portrait photography - studio lighting"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Portrait</span>
+                <a
+                  href="portfolio.html"
+                  class="btn-overlay"
+                  aria-label="View portrait portfolio"
+                  >View</a
+                >
+              </div>
+            </div>
+            <h3>Corporate Portraits</h3>
+            <p>Professional headshots with timeless style</p>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-image-wrapper">
+              <picture>
+                <source
+                  srcset="
+                    https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80&fm=avif
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80&fm=webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80&fm=jpg"
+                  alt="Fashion photography - editorial shoot"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Fashion</span>
+                <a
+                  href="portfolio.html"
+                  class="btn-overlay"
+                  aria-label="View fashion portfolio"
+                  >View</a
+                >
+              </div>
+            </div>
+            <h3>Editorial Fashion</h3>
+            <p>High-end fashion and lifestyle photography</p>
+          </div>
+        </div>
+
+        <div class="featured-cta" data-aos="fade-up">
+          <a href="portfolio.html" class="btn btn-primary-outline">
+            View All Projects
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card" data-aos="fade-up">
+            <div class="stat-number" data-count="12">0</div>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-number" data-count="500">0</div>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-number" data-count="100">0</div>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-number" data-count="15">0</div>
+            <span class="stat-label">Awards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>What Our Clients Say</h2>
+          <p>Real feedback from real clients</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Absolutely stunning photography! The photographer's attention to
+              detail and creative eye exceeded all our expectations. Our wedding
+              photos are treasured memories we'll cherish forever."
+            </p>
+            <h4 class="testimonial-author">Sarah & Michael</h4>
+            <p class="testimonial-service">Wedding Photography</p>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Professional, creative, and incredibly easy to work with. The
+              portraits captured my essence perfectly. Highly recommended for
+              anyone seeking quality photography."
+            </p>
+            <h4 class="testimonial-author">Elena Rodriguez</h4>
+            <p class="testimonial-service">Portrait Photography</p>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Working with this studio for our corporate shoot was seamless.
+              The images perfectly represent our brand values. They understood
+              our vision and delivered beyond expectations."
+            </p>
+            <h4 class="testimonial-author">James Thompson</h4>
+            <p class="testimonial-service">Corporate Photography</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <h2>Ready to Create Something Beautiful?</h2>
+          <p>
+            Let's capture your most precious moments with artistry and
+            professionalism
+          </p>
+          <a href="contact.html#booking" class="btn btn-primary">
+            Start Your Session
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <a href="index.html" class="footer-logo" aria-label="Back to home">
+              <i class="fas fa-camera"></i>
+              <span>STUDIO</span>
+            </a>
+            <p class="footer-tagline">
+              Premium photography for those who appreciate the extraordinary.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul role="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul role="list">
+              <li><a href="services.html#wedding">Wedding Photography</a></li>
+              <li><a href="services.html#events">Events</a></li>
+              <li><a href="services.html#corporate">Corporate</a></li>
+              <li><a href="services.html#portraits">Portraits</a></li>
+              <li><a href="services.html#commercial">Commercial</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a
+                href="https://instagram.com"
+                aria-label="Follow us on Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://facebook.com"
+                aria-label="Like us on Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://tiktok.com"
+                aria-label="Follow us on TikTok"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                aria-label="Follow us on X"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                aria-label="Connect on LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <div class="newsletter-content">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Stay updated with our latest work and photography tips.</p>
+            <form class="newsletter-form" aria-label="Newsletter subscription">
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                aria-label="Email address"
+              />
+              <button type="submit" class="btn btn-primary-small">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Photography Studio. All rights reserved.</p>
+          <a
+            href="#top"
+            class="back-to-top"
+            id="back-to-top"
+            aria-label="Back to top"
+          >
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="animations.js" defer></script>
+  </body>
+</html>

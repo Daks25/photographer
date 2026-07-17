@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse our curated photography portfolio across weddings, portraits, fashion and commercial work."
+    />
+    <meta name="theme-color" content="#111111" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Portfolio | Photography Studio</title>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-container">
+        <a
+          href="index.html"
+          class="navbar-logo"
+          aria-label="Photography portfolio home"
+        >
+          <i class="fas fa-camera"></i>
+          <span>STUDIO</span>
+        </a>
+        <div
+          class="navbar-toggle"
+          id="navbar-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="navbar-menu" id="navbar-menu" role="menu">
+          <li class="navbar-item" role="menuitem">
+            <a href="index.html" class="navbar-link" data-section="home"
+              >Home</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a href="about.html" class="navbar-link" data-section="about"
+              >About</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a
+              href="portfolio.html"
+              class="navbar-link active"
+              data-section="portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a href="services.html" class="navbar-link" data-section="services"
+              >Services</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a href="gallery.html" class="navbar-link" data-section="gallery"
+              >Gallery</a
+            >
+          </li>
+          <li class="navbar-item" role="menuitem">
+            <a href="contact.html" class="navbar-link" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <a
+          href="contact.html#booking"
+          class="btn-cta"
+          aria-label="Book a session"
+          >Book Session</a
+        >
+      </div>
+    </nav>
+
+    <header class="hero" role="banner">
+      <picture class="hero-background">
+        <source
+          srcset="
+            https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80&fm=avif
+          "
+          type="image/avif"
+        />
+        <source
+          srcset="
+            https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80&fm=webp
+          "
+          type="image/webp"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80&fm=jpg"
+          alt="Portfolio photo gallery"
+          class="hero-img"
+        />
+      </picture>
+      <div class="hero-overlay"></div>
+      <div class="hero-content" data-aos="fade-up">
+        <h1 class="hero-title">Our Portfolio</h1>
+        <p class="hero-subtitle">
+          Explore our finest photography work across stories, brands, and
+          celebrations.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section-header" data-aos="fade-up">
+        <h2>Recent Projects</h2>
+        <p>
+          Imagery designed to capture emotion, style, and unforgettable moments.
+        </p>
+      </section>
+
+      <section class="portfolio-grid" data-aos="fade-up" data-aos-delay="100">
+        <article class="portfolio-card">
+          <div class="portfolio-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80"
+              alt="Wedding photography sample"
+              loading="lazy"
+            />
+          </div>
+          <h3>Elegant Weddings</h3>
+          <p>Timeless storytelling for your most cherished moments.</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=1200&q=80"
+              alt="Portrait photography sample"
+              loading="lazy"
+            />
+          </div>
+          <h3>Headshot Portraits</h3>
+          <p>
+            Confident, polished portraits for personal and professional use.
+          </p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80"
+              alt="Fashion photography sample"
+              loading="lazy"
+            />
+          </div>
+          <h3>Fashion Editorials</h3>
+          <p>Bold, editorial photography with cinematic lighting.</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
+              alt="Commercial photography sample"
+              loading="lazy"
+            />
+          </div>
+          <h3>Commercial Campaigns</h3>
+          <p>Brand-driven visuals crafted for marketing and storytelling.</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80"
+              alt="Studio portrait sample"
+              loading="lazy"
+            />
+          </div>
+          <h3>Studio Portraits</h3>
+          <p>Artful studio sessions with refined styling and lighting.</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae?auto=format&fit=crop&w=1200&q=80"
+              alt="Event photography sample"
+              loading="lazy"
+            />
+          </div>
+          <h3>Live Events</h3>
+          <p>Authentic coverage of celebrations, launches, and gatherings.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <a href="index.html" class="footer-logo" aria-label="Back to home"
+              ><i class="fas fa-camera"></i><span>STUDIO</span></a
+            >
+            <p class="footer-tagline">
+              Premium photography for those who appreciate the extraordinary.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul role="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul role="list">
+              <li>
+                <a href="mailto:hello@photostudio.com">hello@photostudio.com</a>
+              </li>
+              <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a
+                href="https://instagram.com"
+                aria-label="Follow us on Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                aria-label="Like us on Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://linkedin.com"
+                aria-label="Connect on LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Photography Studio. All rights reserved.</p>
+          <a
+            href="#top"
+            class="back-to-top"
+            id="back-to-top"
+            aria-label="Back to top"
+            ><i class="fas fa-arrow-up"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="animations.js" defer></script>
+  </body>
+</html>
