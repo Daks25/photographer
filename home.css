@@ -134,7 +134,7 @@
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: var(--space-xl);
     margin-bottom: var(--space-xxl);
 }
@@ -579,22 +579,84 @@
    RESPONSIVE DESIGN
    ============================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .hero {
-        height: 80vh;
-        min-height: 500px;
+        height: 85vh;
+        min-height: 560px;
     }
 
-    .hero-title {
-        font-size: clamp(2rem, 6vw, 3.5rem);
-    }
-
-    .hero-subtitle {
-        font-size: 1.125rem;
-        margin-bottom: 2rem;
+    .hero-content {
+        padding: 0 1.5rem;
     }
 
     .hero-buttons {
         gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-grid,
+    .stats-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        height: 90vh;
+        min-height: 520px;
+        padding-top: 4rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 2.75rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero .btn {
+        width: min(100%, 280px);
+        justify-content: center;
+    }
+
+    .portfolio-grid,
+    .stats-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .portfolio-card {
+        padding: 1rem;
+    }
+
+    .cta-section {
+        padding: 3rem 0;
+    }
+
+    .cta-section h2 {
+        font-size: 1.875rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

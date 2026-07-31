@@ -212,6 +212,20 @@ textarea {
     padding: 0 var(--space-lg);
 }
 
+@media (max-width: 900px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    section {
+        padding: 3.25rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 var(--space-md);
